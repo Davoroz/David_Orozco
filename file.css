@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #FAFAF7;
+  color: #1C1C1C;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #FAFAF7;
+  border-bottom: 1px solid #E0E0E0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-logo a {
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+  color: #1C1C1C;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #1C1C1C;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #A15C38;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 8rem auto 3rem;
+  padding: 0 1.5rem;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  color: #1C1C1C;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #4E4E4E;
+}
+
+p, li {
+  font-size: 1rem;
+  color: #1C1C1C;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #A15C38;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background-color: #8E4F31;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #4E4E4E;
+}
+
+/* Lists */
+ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
+}
